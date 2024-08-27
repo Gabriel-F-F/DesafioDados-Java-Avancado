@@ -30,7 +30,7 @@ public class DadosServiceImpl implements DadosService {
 			msg += "Dado " + (i + 1) + ": valor sorteado " + dado.getLados() + "\n";
 		}
 		msg += "\nSoma: " + soma;
-		msg += String.format("\nPercentual em relação ao sorteio: %.2f%%", ((soma / aposta) * 100));
+		msg += String.format("%nPercentual em relação ao sorteio: %.2f%%", ((soma / aposta) * 100));
 		return msg;
 	}
 }
