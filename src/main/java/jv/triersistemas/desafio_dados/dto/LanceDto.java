@@ -10,18 +10,4 @@ import lombok.NoArgsConstructor;
 public class LanceDto {
 	private Integer quantidadeDados;
 	private Integer aposta;
-
-	public String verificaQuantidadeDados() {
-		if (quantidadeDados < 1 || quantidadeDados > 4) {
-			return "Número de dados inválidos!";
-		}
-		return null;
-	}
-
-	public String verificaAposta() {
-		if (aposta > (quantidadeDados * 6)) {
-			return "Número de aposta inválidos!";
-		}
-		return null;
-	}
 }
