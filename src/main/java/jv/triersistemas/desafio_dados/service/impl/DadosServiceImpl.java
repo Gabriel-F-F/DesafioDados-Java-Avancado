@@ -19,7 +19,7 @@ public class DadosServiceImpl implements DadosService {
 			return "Número de dados inválidos!";
 		}
 
-		if (aposta > (quantidadeDados * 6)) {
+		if ((aposta > (quantidadeDados * 6)) || (aposta < quantidadeDados)) {
 			return "Número de aposta inválidos!";
 		}
 		
