@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class LanceDto {
-	private Integer quantidadeDados;
-	private Integer aposta;
+public class ResultadoDto {
+	private String mensagemDado = "";
+	private String mensagemPercentual = "";
+	private Double soma = 0.0;
 }
